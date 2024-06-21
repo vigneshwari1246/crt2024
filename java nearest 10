@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+           int n;
+    n=s.nextInt();
+    int remainder=n%10;
+    int nearest_multiple;
+    if(remainder<5){
+        nearest_multiple=n-remainder;
+    }
+    else
+    {
+        nearest_multiple=n+(10-remainder);
+    }
+    System.out.printf("%d\n",nearest_multiple);
+    }
+}
